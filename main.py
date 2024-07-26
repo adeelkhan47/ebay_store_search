@@ -102,7 +102,7 @@ least_price = "5000"
 
 status, data = search_ebay(search, least_price)
 if status:
-    for each in list(data.keys())[:5]:
+    for each in list(data.keys()):
         result = get_ebay_store_info(each, item_limit, data)
         if result:
             records.append(result)
